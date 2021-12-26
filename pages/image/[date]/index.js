@@ -21,7 +21,7 @@ const NasaImage = ({ image }) => {
       <div className={styles.desc}>{image.explanation}</div>
       <div className={styles.image_section}>
         <Image
-          src={image.url}
+          src={image.hdurl}
           alt={image.title}
           width="100%"
           height="100%"
