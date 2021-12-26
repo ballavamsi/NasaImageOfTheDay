@@ -4,28 +4,28 @@
   /* background-color: #0005; */
   line-height: 50px;
 }
-.nav ul {
+
+.nav .links {
   float: right;
   margin-right: 30px;
-}
-.nav ul li {
-  list-style-type: none;
-  display: inline-block;
-  transition: 0.7s all;
-}
-.nav ul li:hover {
-  background-color: rgb(6, 9, 32);
-  border-radius: 25px;
-}
-.nav ul li a {
-  text-decoration: none;
-  color: rgb(65, 65, 65);
-  padding: 30px;
+  color: white;
+  margin-top: 60px;
 }
 
-.nav ul li a:hover {
-  color: rgb(182, 182, 182);
+.nav .links a {
+  text-decoration: none;
+  color: #414141;
+  padding: 20px;
+  border-radius: 25px;
+  width: 100px;
+  height: 50px;
+}
+
+.nav .links a:hover {
+  color: #b6b6b6;
+  -webkit-transition: 0.7s all;
   transition: 0.7s all;
+  background-color: rgba(240, 248, 255, 0.425);
 }
 
 .logo {
@@ -36,14 +36,15 @@
   color: rgba(235, 235, 235, 0.8);
 }
 
-.logo h1 {
-  margin: 0;
-  padding: 0;
-}
-
 .logo sub {
   margin-top: -10px;
   position: absolute;
   margin-left: 3px;
   color: rgba(235, 235, 235, 0.5);
 }
+
+.logo h1 {
+  margin: 0;
+  padding: 0;
+}
+/*# sourceMappingURL=Nav.module.css.map */
