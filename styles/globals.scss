@@ -1,0 +1,89 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  //background-color: #202020;
+  background-color: black;
+}
+
+.more-info {
+  color: rgba(236, 236, 236, 0.8);
+  font-size: 0.8rem;
+  font-weight: 300;
+  margin-top: 0.5rem;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.images_div {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding-right: 4rem;
+  margin-right: 4rem;
+}
+
+/* Works on Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgb(0, 0, 0) rgb(145, 145, 145);
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  background: rgb(0, 0, 0);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: rgb(145, 145, 145);
+  border-radius: 20px;
+  border: 4px solid rgb(0, 0, 0);
+}
+
+.buttons-group {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  position: fixed;
+  margin-top: 32px;
+  padding-right: 40px;
+
+  button {
+    box-shadow: none;
+    border: 0px;
+    background-color: black;
+    color: white;
+    margin-right: 10px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+  }
+}
+
+.is-uppercase {
+  text-transform: uppercase;
+}

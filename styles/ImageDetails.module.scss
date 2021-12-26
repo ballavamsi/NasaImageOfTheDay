@@ -1,0 +1,69 @@
+.container {
+  margin-top: -29px;
+  margin-bottom: 30px;
+  margin-right: 15px;
+  margin-left: 15px;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  padding: 30px;
+  background: black;
+}
+
+.back_button {
+  margin-bottom: 24px;
+  button {
+    border-radius: 25px;
+    background-color: rgba(41, 41, 41, 0.568);
+    color: rgba(255, 255, 255, 0.432);
+    border: 0px;
+    width: 150px;
+    height: 45px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      color: rgba(240, 248, 255, 0.781);
+      background-color: rgba(41, 41, 41, 0.8);
+    }
+  }
+}
+.title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: rgba(219, 219, 219, 0.863);
+}
+.date {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  color: rgba(240, 248, 255, 0.781);
+}
+.desc {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: rgba(160, 160, 160, 0.863);
+}
+.image_section {
+  display: block;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  .copyright {
+    font-size: 0.8rem;
+    font-weight: 300;
+    margin-top: 0.5rem;
+    color: rgba(185, 185, 185, 0.562);
+    right: 4px;
+    bottom: -20px;
+    position: absolute;
+  }
+}

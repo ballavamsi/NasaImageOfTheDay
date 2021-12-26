@@ -1,0 +1,29 @@
+.grid_items {
+  padding: 3.75%;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-column-gap: 0;
+  grid-row-gap: 80px;
+  justify-items: center;
+  margin-bottom: 400px;
+}
+@media only screen and (min-width: 948px) {
+  .grid_items {
+    grid-template-columns: 47.5% 47.5%;
+    grid-column-gap: 5%;
+    grid-row-gap: 40px;
+  }
+  .grid_items > div {
+    padding: 90px;
+  }
+}
+
+@media only screen and (min-width: 1329px) {
+  .grid_items {
+    grid-template-columns: 30% 30% 30%;
+    grid-row-gap: 50px;
+  }
+  .grid_items > div {
+    padding: 30px;
+  }
+}

@@ -1,0 +1,113 @@
+.card {
+  border-radius: 10px;
+  padding-top: 90px;
+  padding-left: 30px;
+  padding-right: 30px;
+  width: 400px;
+  height: 590px;
+  cursor: pointer;
+  border-radius: 50px;
+  background: linear-gradient(145deg, #0c0c0c, #141414);
+  -webkit-box-shadow: 20px 20px 60px #0f0f0f, -20px -20px 60px #272727d0;
+          box-shadow: 20px 20px 60px #0f0f0f, -20px -20px 60px #272727d0;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.card:hover {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  -webkit-box-shadow: 20px 20px 60px #1a1a1a, -20px -20px 60px #333333d0;
+          box-shadow: 20px 20px 60px #1a1a1a, -20px -20px 60px #333333d0;
+}
+
+.card:hover .image {
+  -webkit-transform: scale(1.2) translateY(20px) translateX(25px);
+          transform: scale(1.2) translateY(20px) translateX(25px);
+}
+
+.card .title {
+  font-weight: bold;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  color: #444444;
+  margin-left: 7px;
+  margin-bottom: 5px;
+}
+
+.card .image_description {
+  padding: 0 30px 0 10px;
+  overflow: hidden;
+  font-size: 1.1rem;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  color: rgba(255, 255, 255, 0.541);
+}
+
+.card .dateSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 10px 0 0 10px;
+  color: rgba(255, 255, 255, 0.863);
+}
+
+.card .dateSection .day {
+  font-size: 2rem;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-weight: bold;
+}
+
+.card .dateSection .month {
+  font-size: 1.3rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.card .dateSection .month::after {
+  content: "";
+  display: block;
+  width: 35px;
+  border-top: 2px solid #3b3b3b;
+  margin-bottom: 10px;
+}
+
+.card .image {
+  margin-top: 20px;
+  margin-left: 9px;
+  width: 330px;
+  height: 230px;
+  border-radius: 5px;
+  -webkit-transition: all 0.7s ease-in-out;
+  transition: all 0.7s ease-in-out;
+  border: 1px double rgba(1, 12, 48, 0.541);
+  z-index: 1;
+}
+
+.card .image_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+}
+
+.card .copyright {
+  font-size: 0.8rem;
+  font-weight: 300;
+  margin-top: 0.5rem;
+  color: rgba(185, 185, 185, 0.562);
+  right: 4px;
+  bottom: -20px;
+  position: absolute;
+}
+/*# sourceMappingURL=Card.module.css.map */
