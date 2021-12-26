@@ -12,7 +12,7 @@ export default function Home({ nasaData }) {
   );
 }
 
-export const getStaticProps = async () => {
+export const getServerSideProps = async () => {
   var currentImageDate = moment().format("YYYY-MM-DD");
   const res = await fetch(`${server}/api/range/${currentImageDate}`);
   const data = await res.json();
