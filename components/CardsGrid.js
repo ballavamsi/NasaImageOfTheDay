@@ -3,6 +3,7 @@ import styles from "../styles/CardsGrid.module.css";
 import React, { useState } from "react";
 import InfiniteScroll from "react-infinite-scroll-component";
 import moment from "moment";
+import Loading from "./Loading";
 
 const CardsGrid = ({ images }) => {
   const [cards, setCards] = useState(images);
@@ -26,7 +27,7 @@ const CardsGrid = ({ images }) => {
       dataLength={cards.length}
       next={getMoreImages}
       hasMore={true}
-      loader={<h4>Loading...</h4>}
+      loader={<Loading />}
       endMessage={
         <p style={{ textAlign: "center" }}>
           <b>Yay! You have seen it all</b>
