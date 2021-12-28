@@ -16,7 +16,7 @@ const Meta = ({ title, keywords, description }) => {
       <meta name="application-name" content="Nasa IOD" />
       <link rel="icon" href="/favicon.ico" />
       <title>{title}</title>
-      <script type="text/javascript" src="js/clarity.js"></script>
+      <script type="text/javascript" async src="js/clarity.js"></script>
     </Head>
   );
 };
